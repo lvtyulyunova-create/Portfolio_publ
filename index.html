@@ -1,223 +1,188 @@
-<html lang="ru">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Тюлюнова Людмила — Финансист, Главный бухгалтер, AI в финансах</title>
-<!-- Подключение Font Awesome для иконок -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-<style>
-  :root{
-    --bg:#f4f6fb; --card:#ffffff; --text:#1e1e24; --muted:#6b7280;
-    --accent:#6a11cb; --accent2:#2575fc; --line:#e5e7eb;
-    --gradient: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
-  }
-  *{box-sizing:border-box}
-  body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
-       background:var(--bg);color:var(--text);line-height:1.6}
-  .wrap{max-width:900px;margin:0 auto;padding:0 20px}
-  
-  /* Градиентный заголовок с прозрачностью */
-  header{padding:60px 0 40px;text-align:center;}
-  header h1{margin:0 0 10px;font-size:2.8rem;font-weight:800;
-            background: var(--gradient);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;}
-  header p.subtitle{margin:0 0 20px;font-size:1.2rem;color:var(--accent);font-weight:600;}
-  header .badge{display:inline-block;background:#eef2ff;color:var(--accent);
-                padding:6px 14px;border-radius:20px;font-size:0.9rem;font-weight:600;margin-bottom:15px;}
-  .btns{margin-top:25px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
-  .btn{display:inline-block;padding:12px 24px;border-radius:10px;text-decoration:none;
-       font-weight:600;font-size:0.95rem;transition:0.3s}
-  .btn-primary{background:var(--gradient);color:#fff; border:none;}
-  .btn-primary:hover{opacity:0.9; transform: translateY(-2px);}
-  .btn-ghost{border:2px solid var(--accent);color:var(--accent);}
-  .btn-ghost:hover{background:#eef2ff;}
+    lvtyulyunova-create
+    Portfolio_publ
 
-  section{padding:40px 0;border-bottom:1px solid var(--line);}
-  h2{font-size:1.6rem;margin:0 0 25px;color:var(--text); display:flex; align-items:center; gap:10px;}
-  h2 i{color:var(--accent);}
-  h3{margin:0 0 10px;font-size:1.15rem;color:var(--accent); display:flex; align-items:center; gap:8px;}
-  
-  .grid{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));}
-  
-  /* Карточки с анимацией при наведении */
-  .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:24px;
-        box-shadow:0 4px 6px rgba(0,0,0,0.02); transition: all 0.3s ease; position:relative; overflow:hidden;}
-  .card:hover{transform: translateY(-8px); box-shadow: 0 15px 30px rgba(106, 17, 203, 0.1); border-color: #c4b5fd;}
-  .card::before{content:''; position:absolute; top:0; left:0; width:4px; height:100%; background:var(--gradient); opacity:0; transition:0.3s;}
-  .card:hover::before{opacity:1;}
-  
-  ul{margin:0;padding-left:20px;color:var(--muted); font-size:0.95rem;}
-  li{margin-bottom:6px;}
-  
-  .case-card{background:var(--card);border-radius:12px;padding:24px; border:1px solid var(--line);
-             box-shadow:0 4px 6px rgba(0,0,0,0.02); transition:0.3s; margin-bottom:15px;}
-  .case-card:hover{border-color:var(--accent); box-shadow:0 8px 20px rgba(106, 17, 203, 0.08);}
-  .case-card p{margin:0 0 10px;}
-  .case-card strong{color:var(--text); font-size:1.05rem;}
-  .case-card em{color:var(--accent); font-style:normal; font-weight:600;}
-  
-  /* Сетка тегов инструментов */
-  .tags{margin-top:15px; display:flex; flex-wrap:wrap; gap:10px;}
-  .tag{display:inline-flex; align-items:center; gap:6px; background:#f3f4f6; color:var(--text);
-       padding:8px 16px; border-radius:20px; font-size:0.9rem; font-weight:500; transition:0.2s;
-       border:1px solid transparent;}
-  .tag:hover{background:#eef2ff; color:var(--accent); border-color:#c4b5fd; transform:scale(1.05);}
-  .tag i{color:var(--accent);}
-  
-  .contact-links a{display:flex; align-items:center; gap:10px; margin-bottom:12px; color:var(--text);
-                   text-decoration:none; font-weight:500; font-size:1.05rem; transition:0.2s;}
-  .contact-links a:hover{color:var(--accent); transform:translateX(5px);}
-  .contact-links i{color:var(--accent); font-size:1.2rem; width:20px; text-align:center;}
-  
-  footer{padding:30px 0;text-align:center;color:var(--muted);font-size:0.9rem;}
-</style>
-</head>
-<body>
+Repository navigation
 
-<header>
-  <div class="wrap">
-    <div class="badge"><i class="fas fa-laptop-house"></i> Удалённо · 3–4 часа в день</div>
-    <h1>Тюлюнова Людмила</h1>
-    <p class="subtitle">Финансист · Главный бухгалтер · AI в финансах</p>
-    <p style="color:var(--muted); max-width:600px; margin:0 auto 25px;">
-      Навожу порядок в финансах малого бизнеса. Автоматизирую отчётность с помощью AI и Excel. 
-      Помогаю принимать решения на основе цифр.
-    </p>
-    <div class="btns">
-      <a class="btn btn-primary" href="#contact"><i class="fas fa-paper-plane"></i> Обсудить задачу</a>
-      <a class="btn btn-ghost" href="#cases"><i class="fas fa-briefcase"></i> Смотреть кейсы</a>
-    </div>
-  </div>
-</header>
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security and quality
+Insights
 
-<section id="about">
-  <div class="wrap">
-    <h2><i class="fas fa-user-tie"></i> О себе</h2>
-    <p>Более 20 лет работаю в финансовой сфере: от бухгалтера до главного бухгалтера. Вела учёт, отчётность, налоги, финансовый анализ, бюджетирование и внутренний контроль.</p>
-    <p>Сейчас работаю удалённо с малым бизнесом и ИП. Помогаю навести порядок в финансах, автоматизировать рутину и принимать решения на основе цифр.</p>
-    <p>Освоила AI-инструменты и применяю их в финансах: автоматизация Excel и Google Sheets, генерация отчётов, транскрибация встреч, создание инструкций и регламентов, анализ данных, дашборды.</p>
-  </div>
-</section>
+    Settings
 
-<section id="skills">
-  <div class="wrap">
-    <h2><i class="fas fa-chart-line"></i> Ключевые навыки</h2>
-    <div class="grid">
-      <!-- Карточка 1: Финансы -->
-      <div class="card">
-        <h3><i class="fas fa-chart-pie"></i> Оптимизация финансовых задач</h3>
-        <ul>
-          <li>Формирование отчета для вышестоящей организации</li>
-          <li>Сопоставление данных в отчетах</li>
-          <li>Применение нейросетей для анализа и сверки</li>
-          <li>Снижение времени обработки и минимизация ошибок</li>
-        </ul>
-      </div>
-      <!-- Карточка 2: Понимание ИИ (как вы просили - вторая) -->
-      <div class="card">
-        <h3><i class="fas fa-brain"></i> Понимание ИИ</h3>
-        <ul>
-          <li>Различаю ИИ, нейросети, ChatGPT</li>
-          <li>Объясняю разницу простым языком</li>
-          <li>Применяю AI для автоматизации финансовых процессов</li>
-          <li>Генерирую отчеты и инструкции с помощью нейросетей</li>
-        </ul>
-      </div>
-      <!-- Карточка 3: Финансовый анализ -->
-      <div class="card">
-        <h3><i class="fas fa-file-invoice-dollar"></i> Финансовый анализ и отчётность</h3>
-        <ul>
-          <li>Управленческий учёт и бюджетирование</li>
-          <li>Финансовое моделирование и прогноз</li>
-          <li>Дашборды в Excel / Google Sheets</li>
-          <li>Отчёт для собственника</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
+Files
+tT
 
-<section id="cases">
-  <div class="wrap">
-    <h2><i class="fas fa-briefcase"></i> Практические кейсы</h2>
-    
-    <div class="case-card">
-      <p><strong>Оптимизация финансовых задач в бухгалтерии</strong></p>
-      <p><em>Задача:</em> Формирование отчета для вышестоящей организации, сопоставление данных в отчетах.</p>
-      <p><em>Решение:</em> Применение нейросетей для анализа и сверки данных.</p>
-      <p><em>Результат:</em> Снижение времени обработки и минимизация ошибок.</p>
+0910 index.html
+README.md
+
+    index.html
+
+    Portfolio_publ
+
+/
+in
+main
+
+Indent mode
+Indent size
+Line wrap mode
+Editing index.html file contents
+ 
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+180
+181
+182
+183
+184
+185
+186
+187
+188
+189
+190
+191
+192
+193
+194
+195
+196
+197
+198
+199
+200
+201
+202
+203
+204
+205
+206
+207
+208
+209
+210
+211
+212
+213
+214
+215
+216
+217
+218
+219
+220
+221
+222
+223
+      <p><em>������:</em> ������������ ������ ��� ����������� �����������, ������������� ������ � �������.</p>
+      <p><em>�������:</em> ���������� ���������� ��� ������� � ������ ������.</p>
+      <p><em>���������:</em> �������� ������� ��������� � ����������� ������.</p>
     </div>
 
     <div class="case-card">
-      <p><strong>Восстановление учёта для ИП</strong></p>
-      <p><em>Задача:</em> Учёт запущен, отчётность не сдавалась 6 месяцев.</p>
-      <p><em>Решение:</em> Восстановила данные, сверила с банком, сдала отчётность, настроила регламент.</p>
-      <p><em>Результат:</em> Чистая отчётность, штрафов нет.</p>
+      <p><strong>�������������� ����� ��� ��</strong></p>
+      <p><em>������:</em> ���� �������, ���������� �� ��������� 6 �������.</p>
+      <p><em>�������:</em> ������������ ������, ������� � ������, ����� ����������, ��������� ���������.</p>
+      <p><em>���������:</em> ������ ����������, ������� ���.</p>
     </div>
 
     <div class="case-card">
-      <p><strong>Дашборд для собственника</strong></p>
-      <p><em>Задача:</em> Собственник не видел, куда уходят деньги.</p>
-      <p><em>Решение:</em> Собрала дашборд: доходы, расходы, прибыль, динамика.</p>
-      <p><em>Результат:</em> Ежемесячный отчёт за 15 минут.</p>
+      <p><strong>������� ��� ������������</strong></p>
+      <p><em>������:</em> ����������� �� �����, ���� ������ ������.</p>
+      <p><em>�������:</em> ������� �������: ������, �������, �������, ��������.</p>
+      <p><em>���������:</em> ����������� ����� �� 15 �����.</p>
     </div>
   </div>
 </section>
 
 <section id="tools">
   <div class="wrap">
-    <h2><i class="fas fa-tools"></i> Используемые инструменты и технологии</h2>
+    <h2><i class="fas fa-tools"></i> ������������ ����������� � ����������</h2>
     
-    <h3 style="margin-bottom:15px; color:var(--text); font-size:1rem;">Финансы и учёт</h3>
+    <h3 style="margin-bottom:15px; color:var(--text); font-size:1rem;">������� � ����</h3>
     <div class="tags">
-      <span class="tag"><i class="fas fa-calculator"></i> Бухгалтерский учёт</span>
-      <span class="tag"><i class="fas fa-file-invoice"></i> Налоговая отчётность</span>
-      <span class="tag"><i class="fas fa-chart-bar"></i> Управленческий учёт</span>
-      <span class="tag"><i class="fas fa-coins"></i> Бюджетирование</span>
-      <span class="tag"><i class="fas fa-search-dollar"></i> Финансовый анализ</span>
-      <span class="tag"><i class="fas fa-shield-alt"></i> Внутренний контроль</span>
-      <span class="tag"><i class="fas fa-project-diagram"></i> Финансовое моделирование</span>
+      <span class="tag"><i class="fas fa-calculator"></i> ������������� ����</span>
+      <span class="tag"><i class="fas fa-file-invoice"></i> ��������� ����������</span>
+      <span class="tag"><i class="fas fa-chart-bar"></i> �������������� ����</span>
+      <span class="tag"><i class="fas fa-coins"></i> ��������������</span>
+      <span class="tag"><i class="fas fa-search-dollar"></i> ���������� ������</span>
+      <span class="tag"><i class="fas fa-shield-alt"></i> ���������� ��������</span>
+      <span class="tag"><i class="fas fa-project-diagram"></i> ���������� �������������</span>
     </div>
 
-    <h3 style="margin-top:25px; margin-bottom:15px; color:var(--text); font-size:1rem;">Инструменты</h3>
+    <h3 style="margin-top:25px; margin-bottom:15px; color:var(--text); font-size:1rem;">�����������</h3>
     <div class="tags">
-      <span class="tag"><i class="fas fa-file-excel"></i> Excel (продвинутый)</span>
+      <span class="tag"><i class="fas fa-file-excel"></i> Excel (�����������)</span>
       <span class="tag"><i class="fas fa-table"></i> Google Sheets</span>
-      <span class="tag"><i class="fas fa-database"></i> 1С</span>
+      <span class="tag"><i class="fas fa-database"></i> 1�</span>
       <span class="tag"><i class="fas fa-filter"></i> Power Query</span>
-      <span class="tag"><i class="fas fa-chart-pie"></i> Дашборды</span>
+      <span class="tag"><i class="fas fa-chart-pie"></i> ��������</span>
       <span class="tag"><i class="fas fa-robot"></i> ChatGPT</span>
-      <span class="tag"><i class="fas fa-brain"></i> Нейросети для текста</span>
-      <span class="tag"><i class="fas fa-file-alt"></i> Анализ отчетов</span>
+      <span class="tag"><i class="fas fa-brain"></i> ��������� ��� ������</span>
+      <span class="tag"><i class="fas fa-file-alt"></i> ������ �������</span>
       <span class="tag"><i class="fab fa-github"></i> GitHub Pages</span>
     </div>
 
-    <h3 style="margin-top:25px; margin-bottom:15px; color:var(--text); font-size:1rem;">Языки</h3>
+    <h3 style="margin-top:25px; margin-bottom:15px; color:var(--text); font-size:1rem;">�����</h3>
     <div class="tags">
-      <span class="tag"><i class="fas fa-language"></i> Русский — родной</span>
-      <span class="tag"><i class="fas fa-language"></i> Английский — intermediate</span>
-      <span class="tag"><i class="fas fa-language"></i> Французский — intermediate</span>
+      <span class="tag"><i class="fas fa-language"></i> ������� � ������</span>
+      <span class="tag"><i class="fas fa-language"></i> ���������� � intermediate</span>
+      <span class="tag"><i class="fas fa-language"></i> ����������� � intermediate</span>
     </div>
   </div>
 </section>
 
 <section id="contact">
   <div class="wrap">
-    <h2><i class="fas fa-envelope"></i> Контакты</h2>
+    <h2><i class="fas fa-envelope"></i> ��������</h2>
     <div class="contact-links">
       <a href="mailto:7lv7@mail.ru"><i class="fas fa-envelope"></i> 7lv7@mail.ru</a>
       <a href="https://t.me/artisariane"><i class="fab fa-telegram-plane"></i> @artisariane</a>
       <a href="https://github.com/lvtyulyunova-create"><i class="fab fa-github"></i> lvtyulyunova-create</a>
     </div>
-    <p style="color:var(--muted); margin-top:20px; font-size:0.9rem;">Готова обсудить вашу задачу. Отвечаю в течение дня.</p>
+    <p style="color:var(--muted); margin-top:20px; font-size:0.9rem;">������ �������� ���� ������. ������� � ������� ���.</p>
   </div>
 </section>
 
 <footer>
-  <div class="wrap">© Тюлюнова Людмила · Финансист · Главный бухгалтер · AI в финансах</div>
+  <div class="wrap">� �������� ������� � ��������� � ������� ��������� � AI � ��������</div>
 </footer>
 
 </body>
 </html>
+Use Control + Shift + m to toggle the tab key moving focus. Alternatively, use esc then tab to move to the next interactive element on the page.
